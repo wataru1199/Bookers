@@ -1,0 +1,18 @@
+<head>
+    <title>WebCampBackendNew</title>
+    <meta name="csrf-param" content="authenticity_token">
+    <link rel="stylesheet"  href="books.scss">
+   
+  </head>
+  </html>
+  <body>
+      
+<div class="text-success">
+  <%= flash[:notice] %>　
+</div>
+
+   <p>Title: <%= @book.title %></p>
+
+   <p>Body: <%= @book.body %></p>
+   <span><%= link_to "Edit", edit_book_path(@book.id) %></span> <span class="separate">|</span> <span><%= link_to "Back", "/books" %></span>
+ </body>
